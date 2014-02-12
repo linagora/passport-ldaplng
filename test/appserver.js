@@ -1,14 +1,14 @@
 var express      = require('express'),
     passport     = require('passport'),
-    LdapStrategy = require('passport-ldapauth').Strategy;
+    LdapStrategy = require('../lib/passport-ldapauth').Strategy;
 
 var server = null;
 
 var init_passport = function(opts, testopts) {
   if (testopts.no_callback === true) {
-    passport.use(new LdapStrategy(opts));
+    passport.use('ldapauth', new LdapStrategy(opts));
   } else {
-    passport.use(new LdapStrategy(opts, function(user, cb) {
+    passport.use('ldapauth', new LdapStrategy(opts, function(user, cb) {
       return cb(null, user);
     }));
   }

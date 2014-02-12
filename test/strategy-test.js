@@ -1,5 +1,5 @@
 var should       = require('chai').Should(),
-    LdapStrategy = require('passport-ldapauth').Strategy,
+    LdapStrategy = require('../lib/passport-ldapauth').Strategy,
     request      = require('supertest'),
     ldapserver   = require('./ldapserver'),
     appserver    = require('./appserver');
@@ -55,7 +55,7 @@ describe("LDAP authentication strategy", function() {
     it("should throw an error if options are not provided", function(cb) {
       (function() {
         new LdapStrategy(function() {});
-      }).should.throw(Error);
+      }).should.not.throw(Error);
       cb();
     });
 
