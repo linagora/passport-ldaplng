@@ -1,8 +1,8 @@
 {
-  "name": "passport-ldapauth",
+  "name": "passport-ldaplng",
   "description": "LDAP authentication strategy for Passport",
-  "author": "Vesa Poikajärvi <vesa.poikajarvi@iki.fi>",
   "contributors": [
+    "Linagora Folks",
     "Simon Gaeremynck <gaeremyncks@gmail.com>"
   ],
   "keywords": [
@@ -11,10 +11,10 @@
     "authentication",
     "ldapauth"
   ],
-  "version": "0.1.2",
+  "version": "0.2.0",
   "license": {
     "type": "MIT",
-    "url": "https://github.com/vesse/passport-ldapauth/raw/master/LICENSE"
+    "url": "https://github.com/linagora/passport-ldaplng/raw/master/LICENSE"
   },
   "main": "./lib/passport-ldapauth",
   "engines": {
@@ -22,10 +22,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/vesse/passport-ldapauth.git"
+    "url": "https://github.com/linagora/passport-ldaplng.git"
   },
   "bugs": {
-    "url": "https://github.com/vesse/passport-ldapauth/issues"
+    "url": "https://github.com/linagora/passport-ldaplng/issues"
   },
   "dependencies": {
     "ldapauth-fork": "~2.2.5",
