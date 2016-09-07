@@ -28,15 +28,16 @@
     "url": "https://github.com/linagora/passport-ldaplng/issues"
   },
   "dependencies": {
-    "ldapauth-fork": "~2.2.5",
-    "passport": "~0.1.17"
+    "ldapauth-fork": "~2.5.3",
+    "passport": "~0.3.2"
   },
   "devDependencies": {
-    "mocha": "1.14.x",
-    "chai": "1.8.x",
-    "ldapjs": "0.6.x",
-    "express": "3.4.x",
-    "supertest": "0.8.x"
+    "body-parser": "1.15.2",
+    "chai": "3.5.x",
+    "express": "4.14.x",
+    "ldapjs": "1.0.x",
+    "mocha": "3.0.x",
+    "supertest": "2.0.x"
   },
   "scripts": {
     "test": "NODE_PATH=lib mocha --reporter spec test/*-test.js"
